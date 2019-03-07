@@ -18,7 +18,7 @@ sudo wget -P /usr/local/bin https://raw.githubusercontent.com/vace117/sqlplus-an
 
 ## Usage Examples
 
-You can use the wraper scripts:
+You can use the wraper script:
 
 ```bash
 sqlplus.sh sys/password1@localhost:15210/ORCLPDB1.localdomain as sysdba
