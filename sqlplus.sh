@@ -1,0 +1,1 @@
+docker run -it --net host vace117/sqlplus-and-network-tools "$@"
