@@ -13,11 +13,25 @@ docker pull vace117/sqlplus-and-network-tools
 ### Install Wrapper Script
 
 ```bash
-
+sudo wget -P /usr/local/bin https://raw.githubusercontent.com/vace117/sqlplus-and-network-tools/master/sqlplus.sh; sudo chmod +x /usr/local/bin/sqlplus.sh
 ```
 
-## Usage Example
+## Usage Examples
+
+You can use the wraper scripts:
+
+```bash
+sqlplus.sh sys/password1@localhost:15210/ORCLPDB1.localdomain as sysdba
+```
+
+Or execute the image directly:
 
 ```bash
 docker run -it --net host vace117/sqlplus-and-network-tools sys/password1@localhost:15210/ORCLPDB1.localdomain as sysdba
+```
+
+To get a shell inside this container:
+
+```bash
+docker run -it --net host --entrypoint bash vace117/sqlplus-and-network-tools
 ```
