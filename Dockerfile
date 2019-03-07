@@ -14,7 +14,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         iputils-ping \
         traceroute \
         libaio1 \
-        rlwrap \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get purge -y
 
